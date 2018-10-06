@@ -35,5 +35,10 @@ export default [
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. e`t dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit,',
     hearts: 1234567890123
   },
-
+  {
+    id: 7,
+    title: 'For deh web',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. e`t dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit,',
+    hearts: 5
+  },
 ]
