@@ -1,7 +1,8 @@
 .BucketList {
   padding-bottom: 10px;
-  height: 420px; /* hehe*/
+  height: inherit; /* hehe*/
   overflow-y: scroll;
+  margin-bottom: 15px;
 }
 
 .BucketList::-webkit-scrollbar {

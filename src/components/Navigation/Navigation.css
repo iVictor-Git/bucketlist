@@ -1,0 +1,30 @@
+.Navigation {
+  display: flex;
+}
+
+.Navigation div {
+  box-sizing: border-box;
+  padding: 10px 0;
+  background-color: rgba(59, 59, 59, 0.61);
+  width: 33.3333%;
+  width: calc(100% / 3%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgba(20, 20, 20, 0.6);
+  color: white;
+  font-size: 25px;
+  box-shadow: 1px 1px 25px 0.05px rgba(2, 2, 2, 0.4) inset;
+  cursor: pointer;
+}
+
+.Navigation div:hover {
+  background-color: rgba(255, 255, 255, 0.0002);
+  color: black;
+}
+
+.Navigation div:active {
+  box-shadow: none;
+  color: white;
+  background-color: rgba(59, 59, 59, 0.61);
+}
