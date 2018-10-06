@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { getBucketLists } from '../../data/api';
 import BucketListPreview from '../BucketListPreview/BucketListPreview';
-import {Link} from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 export default WrappedComponent => {
   return class extends Component {
@@ -20,13 +19,14 @@ export default WrappedComponent => {
       const shapedData = data
         ? data.map(({ id, title, text, hearts }) => {
             return (
-              <Link to={`/bucket/${id}`} style={{textDecoration: 'none', color: 'black'}}>
-              <BucketListPreview
-                key={id}
-                title={title}
-                text={text}
-                hearts={hearts}
-              />
+              <Link key={id} to={`/bucket/${id}`} className="Link">
+                <BucketListPreview
+                  title={title}
+                  text={text}
+                  hearts={hearts}
+                  max={160}
+                  sectionStyle=""
+                />
               </Link>
             );
           })
