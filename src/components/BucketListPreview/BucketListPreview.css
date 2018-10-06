@@ -1,0 +1,29 @@
+.BucketListPreview {
+  width: 75%;
+  margin: 0 auto;
+  /* border: 1px solid white; */
+  margin-top: 8px;
+  box-sizing: border-box; 
+  border-radius: 5px;
+  height: 85px;
+  box-shadow: 1px .5px .5px .78px gray;
+}
+
+.BucketListTitleBar {
+  padding-top: 3px;
+  font-size: 15px;
+  box-shadow: 0 1px 0 0 gray;
+}
+
+.BucketListTextPreview {
+  font-size: 10px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 7px;
+  padding-top: 3px;
+  padding-left: 7px;
+  /* border: 1px solid white; */
+  margin-bottom: 7px;
+  text-align: left;
+  height: 35px;
+}
