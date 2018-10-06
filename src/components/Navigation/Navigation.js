@@ -1,5 +1,4 @@
 import React from 'react';
-import Text from '../UI/Text/Text';
 import './Navigation.css';
 
 import { MdHome, MdPerson, MdList } from 'react-icons/md';

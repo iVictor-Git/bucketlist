@@ -3,9 +3,7 @@ import Heart from '../../assets/heart-192x144.png';
 import Badge from '../Badge/Badge';
 import Text from '../UI/Text/Text';
 import TitleBar from '../TitleBar/TitleBar';
-import Icon from '../UI/Icon/Icon';
 import { MdAdd } from 'react-icons/md';
-import Plus from '../../assets/plus-59x60.png';
 
 export default ({ title, hearts }) => {
   const options = {
