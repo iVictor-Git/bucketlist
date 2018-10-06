@@ -4,10 +4,10 @@ import Badge from '../Badge/Badge';
 import Text from '../UI/Text/Text';
 import TitleBar from '../TitleBar/TitleBar';
 import Icon from '../UI/Icon/Icon';
+import { MdAdd } from 'react-icons/md';
 import Plus from '../../assets/plus-59x60.png';
 
-export default ({title, hearts}) => {
-
+export default ({ title, hearts }) => {
   const options = {
     imageStyle: {
       width: '10px',
@@ -18,7 +18,7 @@ export default ({title, hearts}) => {
     textStyle: {
       fontSize: '7px',
       marginTop: '5px',
-      boxSizing: 'border-box'
+      boxSizing: 'border-box',
     },
     icon2: {
       width: '9px',
@@ -29,10 +29,10 @@ export default ({title, hearts}) => {
   };
 
   return (
-    <TitleBar className='BucketListTitleBar'>
-        <Badge icon={Heart} options={options} number={hearts} />
-        <Text text={title} />
-        <Icon source={Plus} style={options.icon2} />
-      </TitleBar>
-  )
-}
+    <TitleBar className="BucketListTitleBar">
+      <Badge icon={Heart} options={options} number={hearts} />
+      <Text text={title} />
+      <Text text={MdAdd} style={options.icon2} />
+    </TitleBar>
+  );
+};
