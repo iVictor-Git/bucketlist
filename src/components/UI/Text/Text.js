@@ -25,7 +25,7 @@ const evaluateText = text => {
 
 export default ({ className, style, text }) => {
   return (
-    <div className={className} style={style}>
+    <div className={`${className} Text`} style={style}>
       {evaluateText(text)}
     </div>
   );
