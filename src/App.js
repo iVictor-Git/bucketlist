@@ -5,6 +5,7 @@ import AppTitleBar from './components/AppTitleBar/AppTitleBar';
 import List from './components/UI/List/List';
 import withBucketList from './components/BucketList/BucketList';
 
+import AddBucketListItemButton from './components/AddBucketListButton/AddBucketListItemButton';
 // mobile first approach
 
 class App extends Component {
@@ -14,7 +15,8 @@ class App extends Component {
     return (
       <div className="App">
         <AppTitleBar />
-        <BucketList className='BucketList'/>
+        <BucketList className="BucketList" />
+        <AddBucketListItemButton />
       </div>
     );
   }
