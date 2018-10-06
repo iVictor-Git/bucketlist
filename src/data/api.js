@@ -14,10 +14,10 @@ export const getBucketList = id =>
     const probability = Math.random() * 100;
     const waitTime = Math.random() * 2000;
 
-    const data =
+    const [data] =
       probability < 10
         ? 'Something went wrong'
-        : Data.filter(item => item.id === id);
+        : Data.filter(item => item.id.toString() === id);
 
     setTimeout(() => {
       probability < 10 || !data ? reject(data) : resolve(data);
