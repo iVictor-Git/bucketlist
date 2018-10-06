@@ -1,13 +1,13 @@
 .BucketList {
   padding-bottom: 10px;
   height: inherit; /* hehe*/
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   margin-bottom: 15px;
 }
 
 .BucketList::-webkit-scrollbar {
   /* set this to something above 0 to see scroll bar */
-  width: 0;
+  /* width: 0; */
 }
 /* 
 .BucketList::-webkit-scrollbar-track {

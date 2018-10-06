@@ -1,7 +1,7 @@
 .Add-BucketList-Button {
   position: fixed;
   box-sizing: border-box;
-  left: 435px;
+  left: 432px;
   bottom: 310px;
   background-color: rgba(134, 134, 134, 0.274);
   border-radius: 200px;
@@ -12,9 +12,18 @@
   cursor: pointer;
 }
 
+.Add-BucketList-Button:hover {
+  font-size: 40px;
+  height: 60px;
+  width: 60px;
+  left: 410px;
+  bottom: 315px;
+  background-color: rgba(100, 100, 100, 1);
+  color: white;
+}
+
 .Add-BucketList-Button:active {
   box-shadow: 0.5px 0.5px 0.5px 0.5px black inset;
-  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .Add-BucketList-Button img {

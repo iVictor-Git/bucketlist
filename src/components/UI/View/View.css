@@ -1,5 +1,9 @@
 .View {
   min-height: 550px;
   max-height: 550px;
-  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.View::-webkit-scrollbar {
+  width: 0px;
 }
