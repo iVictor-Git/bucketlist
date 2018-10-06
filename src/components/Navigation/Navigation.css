@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.Navigation div {
+.Navigation .Text {
   box-sizing: border-box;
   padding: 10px 0;
   background-color: rgba(59, 59, 59, 0.61);
@@ -18,12 +18,13 @@
   cursor: pointer;
 }
 
-.Navigation div:hover {
+.Navigation .Text:hover,
+.Active-NavLink {
   background-color: rgba(255, 255, 255, 0.0002);
   color: black;
 }
 
-.Navigation div:active {
+.Navigation .Text:active {
   box-shadow: none;
   color: white;
   background-color: rgba(59, 59, 59, 0.61);
