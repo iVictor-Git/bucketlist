@@ -14,17 +14,14 @@ const evalulateText = (text = '', max) => {
   return text.length < max ? text : transformText(text, max);
 };
 
-export default ({
-  title = 'Some title',
-  hearts = 0,
-  text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit,',
-}) => {
-  const transformedText = evalulateText(text, 160);
+export default ({title, hearts, text, max, sectionStyle, textStyle}) => {
+  console.log(max, sectionStyle);
+  const transformedText = evalulateText(text, max);
 
   return (
-    <section className="BucketListPreview">
+    <section className={`BucketListPreview ${sectionStyle}`}>
       <BucketListTitleBar title={title} hearts={hearts} />
-      <Text text={transformedText} className="BucketListTextPreview" />
+      <Text text={transformedText} className={`BucketListTextPreview ${textStyle}`}/>
     </section>
   );
 };
