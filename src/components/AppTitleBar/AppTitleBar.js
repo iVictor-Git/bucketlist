@@ -4,6 +4,7 @@ import TitleBar from '../TitleBar/TitleBar';
 import { MdSettings, MdFlight } from 'react-icons/md';
 import Icon from '../UI/Icon/Icon';
 import Text from '../UI/Text/Text';
+import { Link } from 'react-router-dom';
 
 import './AppTitleBar.css';
 export default () => {
@@ -11,9 +12,13 @@ export default () => {
     <TitleBar
       className="AppTitleBar"
       style={{ borderBottom: '1px solid white' }}>
-      <Text text={MdFlight} className="Left-Logo" />
+      <Link to="/" style={{ color: 'white' }}>
+        <Text text={MdFlight} className="Left-Logo" />
+      </Link>
       <Text text="Bucket List" />
-      <Text text={MdSettings} className="Right-Logo" />
+      <Link to="/setting" style={{ color: 'white' }}>
+        <Text text={MdSettings} className="Right-Logo" />
+      </Link>
     </TitleBar>
   );
 };

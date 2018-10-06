@@ -8,13 +8,20 @@ import View from './components/UI/View/View';
 import HomeView from './components/HomeView/HomeView';
 // mobile first approach
 
+import { Route, Switch } from 'react-router-dom';
+import BucketView from './components/BucketView/BucketView';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <AppTitleBar />
         <View className="View">
-          <HomeView />
+          <Switch>
+            <Route exact path="/" component={HomeView} />
+            <Route path="/bucket" component={BucketView} />
+            <Route component={() => <h1>Not Found</h1>} />
+          </Switch>
         </View>
         <Navigation />
       </div>
