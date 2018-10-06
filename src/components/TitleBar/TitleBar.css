@@ -13,9 +13,24 @@
 }
 
 .Left-Logo {
-  padding-left: 5px;
+  margin: 7px 0 5px 7px;
 }
 
 .Right-Logo {
-  padding-right: 5px;
+  margin-top: 7px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  padding: 2px;
+}
+
+.Right-Logo,
+.Left-Logo {
+  border-radius: 75px;
+  cursor: pointer;
+  height: 31px;
+}
+
+.Right-Logo:active {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px black inset;
+  /* background-color: gray; */
 }

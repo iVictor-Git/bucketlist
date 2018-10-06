@@ -1,0 +1,25 @@
+.Add-BucketList-Button {
+  position: fixed;
+  box-sizing: border-box;
+  left: 435px;
+  bottom: 470px;
+  background-color: rgba(134, 134, 134, 0.274);
+  border-radius: 200px;
+  height: 40px;
+  width: 40px;
+  padding-top: 12px;
+  box-shadow: 0.7px 0.7px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.Add-BucketList-Button:active {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px black inset;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.Add-BucketList-Button img {
+  position: relative;
+  top: 1px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+}
