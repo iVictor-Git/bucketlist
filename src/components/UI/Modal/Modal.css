@@ -1,0 +1,32 @@
+.Modal {
+  position: absolute;
+  z-index: 500;
+  background-color: white;
+  width: 70%;
+  border: 1px solid white;
+  box-shadow: 1px 1px 1px black;
+  box-sizing: border-box;
+  top: -300px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  max-height: 35%;
+  overflow: hidden;
+  transition: all .2s ease-in;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.Modal h1 {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.Modal.Show {
+  transform: translateY(500px);
+}
+
+Modal.Hide {
+  /* transform: translateY(200px); */
+}
