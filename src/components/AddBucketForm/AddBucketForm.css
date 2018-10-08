@@ -1,0 +1,45 @@
+.AddBucketSection {
+  box-shadow: 2px 1px 10px 1px black;
+  border-radius: 5px; 
+  background-color: white;
+}
+
+.AddBucketForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+.TitleField {
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: rgba(200, 200, 200, .35);
+  margin-top: 15px;
+  width: 100%;
+  font-size: 13px;
+}
+
+.TextField {
+  margin-top: 10px;
+  height: 100px;
+  width: 100%;
+  border: none;
+  border: 1px solid lightgray;
+  resize: none;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  font-size: 13px;
+}
+
+.TextField::-webkit-scrollbar {
+  width: 0px;
+}
+
+.AddFormButton {
+  height: auto;
+  width: 50%;
+  margin: 0 auto;
+}
