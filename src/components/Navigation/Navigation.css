@@ -1,5 +1,6 @@
 .Navigation {
   display: flex;
+  height: 7vh;
 }
 
 .Navigation .Text {
