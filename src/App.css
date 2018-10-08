@@ -1,8 +1,8 @@
 /* by default, start with mobile first approach */
 .App {
   text-align: center;
-  max-width: 480px;
-  min-width: 320px;
+  max-width: 100vw;
+  min-width: 66vw;
   border: 1px solid gray;
   /* background-color: black; */
   /* color: white; */
