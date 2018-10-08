@@ -2,6 +2,10 @@
   padding-bottom: 10px;
   /* overflow-y: scroll; */
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .BucketList::-webkit-scrollbar {
