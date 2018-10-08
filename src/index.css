@@ -6,9 +6,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html {
+  overflow: hidden;
+
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, .7);
+  color: white;
+}
+
+.button {
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  
 }
