@@ -25,7 +25,7 @@ export default WrappedComponent => {
                   text={text}
                   hearts={hearts}
                   max={160}
-                  sectionStyle=""
+                  className='BucketListPreview'
                 />
               </Link>
             );
