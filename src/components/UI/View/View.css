@@ -1,7 +1,11 @@
 .View {
-  min-height: 550px;
-  max-height: 550px;
+  height: 86vh;
   overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .View::-webkit-scrollbar {
