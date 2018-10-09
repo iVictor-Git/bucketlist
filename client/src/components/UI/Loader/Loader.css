@@ -2,3 +2,16 @@
   margin-top: 10px;
   overflow-x: hidden;
 }
+
+.Loading {
+  width: 70vw;
+  margin: 0 auto;
+  height: 15vh;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.Loading.Detail {
+  width: 79.5vw;
+  min-height: 82vh;
+}
