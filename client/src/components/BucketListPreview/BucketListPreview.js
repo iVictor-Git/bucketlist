@@ -14,7 +14,7 @@ const evalulateText = (text = '', max) => {
   return text.length < max ? text : transformText(text, max);
 };
 
-const BucketListPreview = ({title, hearts, text, max, className}) => {
+const BucketListPreview = ({title, hearts, text, max = 160, className}) => {
   const transformedText = evalulateText(text, max);
 
   return (
