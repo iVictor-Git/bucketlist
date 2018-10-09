@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import withBucketList from '../BucketList/BucketList';
+import withBucketListWrapper from '../BucketList/BucketList';
 import List from '../UI/List/List';
 
 import './HomeView.css';
 import ModalControl from '../ModalControl/ModalControl';
 
+import QueryBucketLists from '../QueryBucketLists/QueryBucketLists'
+
 class HomeView extends Component {
-  
   render() {
-    const BucketList = withBucketList(List);
+    const BucketList = withBucketListWrapper(QueryBucketLists)(List);
 
     return (
-      <section className='HomeView'>
+      <section className="HomeView">
         <BucketList className="BucketList" />
         <ModalControl />
       </section>
@@ -19,4 +20,4 @@ class HomeView extends Component {
   }
 }
 
-export default HomeView
+export default HomeView;

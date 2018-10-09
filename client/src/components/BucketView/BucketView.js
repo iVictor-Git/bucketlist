@@ -1,6 +1,6 @@
 import React from 'react';
 import BucketListLoader from '../BucketListLoader/BucketListLoader';
-import BucketDetails from '../BucketListPreview/BucketListPreview';
+import QueryBucketLists from '../QueryBucketLists/QueryBucketLists'
 
 const BucketView = ({match, location, history}) => {
   const path = location.pathname.split('/')
@@ -8,10 +8,9 @@ const BucketView = ({match, location, history}) => {
 
   const id = path[indexOfId]
 
-  const ExtraProps = BucketListLoader({id: id, max: 1000})
-  const FullBucketDetails = ExtraProps(BucketDetails)
+  const FullBucketListDetail = BucketListLoader(id)(QueryBucketLists)
 
-  return <FullBucketDetails max={1000} className='BucketListPreview BucketListTextPreview Detail' />;
+  return <FullBucketListDetail max={1000} className='BucketListPreview BucketListTextPreview Detail' />;
 };
 
 export default BucketView;
