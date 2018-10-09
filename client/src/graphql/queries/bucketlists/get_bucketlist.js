@@ -6,6 +6,10 @@ export const GET_BUCKETLIST = gql`
       title
       text
       hearts
+      owner{
+        firstName
+        lastName
+      }
     }
   }
 `;
