@@ -1,7 +1,11 @@
 module.exports = {
   BucketList: {
-    owner: (parent, _, { models: { User } }) => {
-      return User.findById({ id: parent.ownerId });
+    owner: ({ownerId}, _, { models: { User } }) => {
+      const owner = User.findById(ownerId)
+      if (!owner) {
+        return Error('Owner not found');
+      }
+      return owner
     },
     users: ({ userIds }, _, { models: { User } }) => {
       const users = userIds.map(uid => {
