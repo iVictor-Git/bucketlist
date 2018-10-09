@@ -1,0 +1,9 @@
+#import BucketList from '../bucketlist/bucketlist.graphql'
+
+type User {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  email: String!
+  bucketLists: [BucketList!]!
+}

@@ -1,0 +1,6 @@
+# import UserInput from '../../input/user/user_input.graphql'
+# import User from '../../types/user/user.graphql'
+
+type Mutation {
+  addUser(input: UserInput!): User!
+}

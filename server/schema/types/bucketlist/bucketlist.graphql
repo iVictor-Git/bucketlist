@@ -1,0 +1,8 @@
+# import User from '../user/user.graphql'
+
+type BucketList {
+  id: ID!
+  title: String!
+  text: String!
+  owner: User!
+}

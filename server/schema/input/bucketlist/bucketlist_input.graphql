@@ -1,0 +1,5 @@
+input BucketListInput {
+  title: String!
+  text: String!
+  ownerId: ID!
+}

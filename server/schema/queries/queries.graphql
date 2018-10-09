@@ -1,0 +1,2 @@
+# import Query.* from './user/user_query.graphql'
+# import Query.* from './bucketlist/bucketlist_query.graphql'

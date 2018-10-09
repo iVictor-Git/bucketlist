@@ -1,0 +1,6 @@
+# import BucketList from '../../types/bucketlist/bucketlist.graphql';
+
+type Query {
+  bucketlist(id: ID!): BucketList!
+  bucketlists: [BucketList!]!
+}

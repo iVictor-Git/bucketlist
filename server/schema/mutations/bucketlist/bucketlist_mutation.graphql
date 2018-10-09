@@ -1,0 +1,6 @@
+# import BucketListInput from '../../input/bucketlist/bucketlist_input.graphql'
+# import BucketList from '../../types/bucketlist/bucketlist.graphql'
+
+type Mutation {
+  addBucketList(input: BucketListInput!): BucketList!
+}
