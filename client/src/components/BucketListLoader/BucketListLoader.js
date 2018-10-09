@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import { getBucketList } from '../../data/api';
-
+import React from 'react';
 
 const BucketListLoader = (id) => (QueryComponent) => (props) => {
   return (

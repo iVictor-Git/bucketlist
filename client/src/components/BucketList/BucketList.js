@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import { getBucketLists } from '../../data/api';
-
+import React from 'react';
 
 const BucketListWrapper = (QueryComponent) => (WrappedComponent) => (props) => {
   return (
