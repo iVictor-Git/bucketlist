@@ -27,6 +27,6 @@
   transform: translateY(500px);
 }
 
-Modal.Hide {
+.Modal.Hide {
   /* transform: translateY(200px); */
 }
