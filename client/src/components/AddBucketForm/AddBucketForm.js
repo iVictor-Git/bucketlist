@@ -26,7 +26,7 @@ export default class extends Component {
 
     return (
       <section className={`${className}`}>
-        <form class='AddBucketForm' onSubmit={e => e.preventDefault()}>
+        <form className='AddBucketForm' onSubmit={e => e.preventDefault()}>
           <Input
             type="text"
             element="input"
