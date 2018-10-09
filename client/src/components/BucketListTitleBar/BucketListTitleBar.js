@@ -15,7 +15,7 @@ export default ({ title, hearts }) => {
     },
     textStyle: {
       fontSize: '7px',
-      marginTop: '5px',
+      marginTop: '4px',
       boxSizing: 'border-box',
     },
     icon2: {
