@@ -5,6 +5,6 @@ type BucketList {
   title: String!
   text: String!
   owner: User!
-  hearts: Number!
+  hearts: Int!
   users: [User!]!
 }
