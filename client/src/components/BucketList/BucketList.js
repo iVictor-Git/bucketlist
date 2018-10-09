@@ -14,7 +14,6 @@ export default WrappedComponent => {
 
     componentDidMount = async () => {
       const data = await getBucketLists().catch(console.error);
-
       // shape data
       const shapedData = data
         ? data.map(({ id, title, text, hearts }) => {
@@ -25,7 +24,7 @@ export default WrappedComponent => {
                   text={text}
                   hearts={hearts}
                   max={160}
-                  className='BucketListPreview'
+                  className="BucketListPreview"
                 />
               </Link>
             );
