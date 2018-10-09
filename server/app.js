@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const models = require('./models');
 
 const getScope = (req) => {
-  console.log(req);
+  console.log(req.body);
 }
 
 // The GraphQL schema
@@ -24,7 +24,7 @@ const database = mongoose.connection; // this represents the database even thoug
 const server = new ApolloServer({
   schema,
   context: ({req}) => ({
-    authScope: getScope(req.headers), // make a function called getScope
+    authScope: getScope(req), // make a function called getScope
     models
   })
 });
