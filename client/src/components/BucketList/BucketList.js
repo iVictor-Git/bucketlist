@@ -3,7 +3,7 @@ import { getBucketLists } from '../../data/api';
 import BucketListPreview from '../BucketListPreview/BucketListPreview';
 import { Link } from 'react-router-dom';
 
-export default WrappedComponent => {
+const BucketListWrapper = WrappedComponent => {
   return class extends Component {
     constructor(props) {
       super(props);
@@ -51,3 +51,5 @@ export default WrappedComponent => {
     }
   };
 };
+
+export default BucketListWrapper;
