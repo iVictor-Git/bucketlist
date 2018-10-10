@@ -1,5 +1,5 @@
 const {merge} = require('lodash')
-const addUserMutation = require('./user/add_user')
-const addBucketlistMutation = require('./bucketlist/add_bucket_list');
+const addUserMutations = require('./user/')
+const addBucketlistMutations = require('./bucketlist/');
 
-module.exports = merge(addUserMutation, addBucketlistMutation);
+module.exports = merge(addUserMutations, addBucketlistMutations);
