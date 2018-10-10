@@ -43,7 +43,7 @@ const QueryBucketLists = props => {
         const { bucketlist } = data;
         const dataProps = { ...bucketlist };
 
-        return <BucketListPreview {...props} {...dataProps} />;
+        return <BucketListPreview {...props} {...dataProps} className='BucketListTextPreview Detail BucketListPreview'/>;
       }}
     </Query>
   );
