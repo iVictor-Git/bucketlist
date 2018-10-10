@@ -3,5 +3,5 @@
 
 type Mutation {
   addBucketList(input: BucketListInput!): BucketList!
-  deleteBucketList(id: String!): BucketList
+  deleteBucketList(id: String!): [BucketList!]!
 }
