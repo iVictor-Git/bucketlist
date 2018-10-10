@@ -2,28 +2,12 @@ import React, { Component } from 'react';
 import './AddBucketForm.css';
 import Input from '../UI/Input/Input';
 
-import gql from 'graphql-tag';
 import {Mutation} from 'react-apollo'
 import {Redirect} from 'react-router-dom';
 
-import {GET_BUCKETLISTS} from '../../graphql/queries/index';
+import {GET_BUCKETLISTS, ADD_BUCKETLIST} from '../../graphql/queries/index';
 
-const ADD_BUCKETLIST = gql`
-mutation AddBucketList($input: BucketListInput!)
-  {
-  addBucketList(input: $input) {
-    hearts
-    title
-    text
-    id
-    owner {
-      id
-      firstName
-      lastName
-    }
-  }
-}
-`
+
 
 class AddBucketForm extends Component {
   constructor(props) {
@@ -46,7 +30,7 @@ class AddBucketForm extends Component {
       input: {
         title: this.state.title,
         text: this.state.text,
-        ownerId: "5bbc1ff1feb54c0236573b13"
+        ownerId: "5bbc1ff1feb54c0236573b13" // TODO: dynamically load this ass the authed user
       }
     }})
   }
