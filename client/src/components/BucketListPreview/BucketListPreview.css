@@ -27,6 +27,11 @@
   text-align: left;
 }
 
-.BucketListTextPreview.Detail {
+.BucketListTextPreview.Detail.BucketListPreview {
   min-height: 80vh;
+}
+
+.BucketListTextPreview.Text.Detail {
+  min-height: 65vh;
+  padding-top: 10px;
 }
