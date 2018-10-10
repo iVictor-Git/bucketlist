@@ -54,11 +54,24 @@ html {
 }
 
 .small.delete.button.Detail:hover {
-  background-color: rgba(200, 41, 41, 1)
+  background-color: rgba(200, 41, 41, 1);
 }
 
 .small.delete.button.Detail:active {
-  box-shadow: .5px .5px 2px .5px rgba(255, 255, 255, .6) inset;
+  box-shadow: 0.5px 0.5px 2px 0.5px rgba(255, 255, 255, 0.6) inset;
   border-top: 1px solid gray;
   border-left: 1px solid gray;
+}
+
+.confirm {
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+.Modal.Show.Delete {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
