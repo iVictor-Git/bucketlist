@@ -6,13 +6,13 @@ import { GET_BUCKETLISTS, GET_BUCKETLIST } from '../../graphql/queries/';
 import BucketListPreview from '../BucketListPreview/BucketListPreview';
 import { Link } from 'react-router-dom';
 import FullPageLoader from '../FullPageLoader/FullPageLoader';
-import Loader from '../UI/Loader/Loader'
+import Loader from '../UI/Loader/Loader';
 
 const QueryBucketLists = props => {
   const { id } = props;
   if (!id) {
     return (
-      <Query query={GET_BUCKETLISTS}>
+      <Query query={GET_BUCKETLISTS} >
         {({ loading, error, data }) => {
           if (error) return <h1>Error</h1>;
           if (loading || !data) return <FullPageLoader />;
@@ -38,12 +38,20 @@ const QueryBucketLists = props => {
     <Query query={GET_BUCKETLIST} variables={{ id }}>
       {({ loading, error, data }) => {
         if (error) return <h1>Error</h1>;
-        if (loading || !data) return <Loader className='BucketListPreview Loading Detail' />
+        if (loading || !data)
+          return <Loader className="BucketListPreview Loading Detail" />;
 
         const { bucketlist } = data;
-        const dataProps = { ...bucketlist };
+        const dataProps = { ...bucketlist, id };
+        console.log(dataProps);
 
-        return <BucketListPreview {...props} {...dataProps} className='BucketListTextPreview Detail BucketListPreview'/>;
+        return (
+          <BucketListPreview
+            {...props}
+            {...dataProps}
+            className="BucketListTextPreview Detail BucketListPreview"
+          />
+        );
       }}
     </Query>
   );
