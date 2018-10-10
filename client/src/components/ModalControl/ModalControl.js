@@ -25,7 +25,7 @@ export default class extends Component {
     const modalClassName = 'Modal '.concat(show ? 'Show' : 'Hide');
     return (
       <section>
-        <AddBucketListItemButton toggleModal={this.toggleModal} />
+        <AddBucketListItemButton onClick={this.toggleModal} />
         <Backdrop show={show} toggleModal={this.toggleModal} />
         <Modal className={modalClassName} title="Add a Bucketlist">
           <AddBucketForm

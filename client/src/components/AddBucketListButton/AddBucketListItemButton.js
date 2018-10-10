@@ -6,14 +6,14 @@ import Text from '../UI/Text/Text';
 
 import './AddBucketItemButton.css';
 
-const AddBucketListItemButton = ({toggleModal}) => (
+const AddBucketListItemButton = ({ onClick }) => (
   <Text
     text={MdAdd}
     alt="add bucketlist"
     className="Add-BucketList-Button"
-    toggleModal={toggleModal}
+    onClick={onClick}
     // divStyle={{ height: '30px' }}
   />
 );
 
-export default AddBucketListItemButton
+export default AddBucketListItemButton;

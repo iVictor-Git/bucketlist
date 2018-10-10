@@ -23,9 +23,9 @@ const evaluateText = text => {
   );
 };
 
-export default ({ className, style, text, toggleModal }) => {
+export default ({ className, style, text, onClick }) => {
   return (
-    <div className={className} style={style} onClick={toggleModal}>
+    <div className={className} style={style} onClick={onClick}>
       {evaluateText(text)}
     </div>
   );
